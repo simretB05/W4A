@@ -1,0 +1,102 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+#header {
+  min-height: 10vh;
+  background-color: #f8f4f0;
+  display: grid;
+  place-items: center;
+}
+.logo {
+  color: #6e4a9e;
+  text-transform: uppercase;
+  justify-self: start;
+  padding: 16px;
+}
+#main-description {
+  width: 90%;
+  height: 80vh;
+  margin: 16px auto;
+  display: grid;
+  grid-template-rows: auto;
+  place-items: center;
+  background-color: #6e4a9e;
+}
+#meet-team,
+#our-products {
+  width: 90%;
+  height: 40%;
+  margin: 16px auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  place-items: center;
+  gap: 16px;
+}
+
+.team-highlights {
+  width: 90%;
+  display: grid;
+  place-items: center;
+  background-color: #ecedef;
+  padding: 16px;
+}
+
+.team-title {
+  color: #6e4a9e;
+  font-size: 1.4rem;
+  padding: 13px;
+}
+.team-highlights > p {
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1.12px;
+  line-height: 24px;
+  font-weight: 900;
+  color: #9b7cc4;
+  display: none;
+}
+@media only screen and (min-width: 720px) {
+  .team-highlights > p {
+    display: block;
+  }
+}
+.team-body span {
+  color: rgb(247, 132, 86);
+}
+
+.products {
+  background-color: #ecedef;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  justify-self: center;
+  align-self: center;
+  margin: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.product-img {
+  width: 100%;
+  object-fit: cover;
+  align-self: start;
+  justify-self: start;
+}
+.products > p {
+  width: 90%;
+  font-weight: 400;
+  font-size: 1rem;
+  letter-spacing: 1.12px;
+  line-height: 24px;
+  justify-self: center;
+  align-self: start;
+  color: #6e4a9e;
+}
+
+#footer {
+  min-height: 10vh;
+  background-color: #f8f4f0;
+}
