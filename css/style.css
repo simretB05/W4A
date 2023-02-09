@@ -58,7 +58,7 @@ body {
   font-size: 1.4rem;
   padding: 13px;
 }
-.team-highlights > p {
+.team-body {
   width: 100%;
   text-align: center;
   font-size: 1rem;
@@ -66,10 +66,11 @@ body {
   line-height: 24px;
   font-weight: 900;
   color: #9b7cc4;
+  padding: 16px;
   display: none;
 }
 @media only screen and (min-width: 720px) {
-  .team-highlights > p {
+  .team-body {
     display: block;
   }
 }
@@ -111,12 +112,13 @@ body {
 .productTwo p {
   width: 90%;
   font-weight: 400;
-  font-size: 1rem;
+  font-size: 1.2rem;
   letter-spacing: 1.12px;
   line-height: 24px;
   justify-self: center;
   align-self: center;
   color: #6e4a9e;
+  padding: 16px;
 }
 
 #footer {
