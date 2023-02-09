@@ -159,6 +159,7 @@ button,
   font-size: 1rem;
   text-align: center;
   font-weight: 900;
+  text-decoration: none;
 }
 
 #footer h3 {
@@ -180,9 +181,8 @@ button,
   place-items: center;
   grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
 }
-button {
+.contact-btn {
   background-color: #6e4a9e;
-  color: #ecedef;
   width: 70%;
   text-align: center;
   border: none;
@@ -190,6 +190,12 @@ button {
   padding: 5.9px;
   margin: 10px;
 }
-button a {
+.contact-btn a {
   color: #ecedef;
+  text-decoration: none;
+}
+.pages-links a {
+  font-size: 0.7em;
+  text-decoration: none;
+  color: #6e4a9e;
 }
