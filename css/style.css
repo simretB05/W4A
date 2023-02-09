@@ -48,11 +48,10 @@ body {
 }
 
 .team-highlights {
-  width: 90%;
+  width: 100%;
   display: grid;
   place-items: center;
   background-color: #ecedef;
-  padding: 16px;
 }
 
 .team-title {
@@ -87,35 +86,34 @@ body {
   display: grid;
   justify-self: center;
   align-self: center;
-  margin: 16px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
 }
-@media only screen and (min-width: 720px) {
+/* @media only screen and (min-width: 768px) {
   .productOne,
   .productTwo {
     grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
   }
-}
-.productOne-img,
-.productTwo-img {
-  width: 100%;
-  object-fit: cover;
-  align-self: start;
-  justify-self: start;
-}
-
+} */
 @media only screen and (min-width: 1000px) {
-  .productOne-img {
-    order: 2;
+  .productOne,
+  .productTwo {
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   }
 }
 .productOne-img,
 .productTwo-img {
   width: 100%;
   object-fit: cover;
-  align-self: start;
-  justify-self: start;
+  align-self: center;
+  justify-self: center;
 }
+
+@media only screen and (min-width: 1000px) {
+  .productTwo-img {
+    order: 2;
+  }
+}
+
 .productOne p,
 .productTwo p {
   width: 90%;
