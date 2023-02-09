@@ -30,14 +30,20 @@ body {
 #meet-team,
 #our-products {
   width: 90%;
-  height: 30%;
+  min-height: 50%;
   margin: 16px auto;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(288px, 1fr));
   place-items: center;
   gap: 16px;
 }
 
+@media only screen and (min-width: 720px) {
+  #meet-team,
+  #our-products {
+    grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
+  }
+}
 .team-highlights {
   width: 90%;
   display: grid;
@@ -82,8 +88,9 @@ body {
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
 @media only screen and (min-width: 1000px) {
-  .productOne {
-    order: 2;
+  .productOne,
+  .productTwo {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   }
 }
 .productOne-img,
@@ -93,11 +100,12 @@ body {
   align-self: start;
   justify-self: start;
 }
-@media only screen and (min-width: 720px) {
+
+@media only screen and (min-width: 1000px) {
   .productOne-img {
     order: 2;
-    
   }
+}
 .productOne-img,
 .productTwo-img {
   width: 100%;
@@ -105,8 +113,8 @@ body {
   align-self: start;
   justify-self: start;
 }
-.productOne > p,
-.productTwo > p {
+.productOne p,
+.productTwo p {
   width: 90%;
   font-weight: 400;
   font-size: 1rem;
@@ -120,4 +128,68 @@ body {
 #footer {
   min-height: 10vh;
   background-color: #f8f4f0;
+  display: grid;
+  grid-auto-flow: column;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  font-size: 1.7rem;
+  place-items: center;
+  padding: 1rem;
+}
+.footer-card {
+  width: 90%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+.social,
+.contact,
+.news-letter {
+  width: 100%;
+  min-height: 70%;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+#footer h3,
+button,
+.social-media {
+  color: #6e4a9e;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: 900;
+}
+
+#footer h3 {
+  font-size: 0.7em;
+  justify-self: center;
+  align-self: end;
+}
+.social-nav {
+  width: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+}
+
+.btn-holder {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+}
+button {
+  background-color: #6e4a9e;
+  color: #ecedef;
+  width: 70%;
+  text-align: center;
+  border: none;
+  border-radius: 10px;
+  padding: 5.9px;
+  margin: 10px;
+}
+button a {
+  color: #ecedef;
 }
