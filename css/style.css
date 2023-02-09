@@ -52,7 +52,9 @@ body {
   place-items: center;
   background-color: #ecedef;
 }
-
+.team-image {
+  margin-top: 16px;
+}
 .team-title {
   color: #6e4a9e;
   font-size: 1.4rem;
@@ -85,14 +87,8 @@ body {
   display: grid;
   justify-self: center;
   align-self: center;
-  /* grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); */
 }
-/* @media only screen and (min-width: 768px) {
-  .productOne,
-  .productTwo {
-    grid-template-columns: repeat(auto-fit, minmax(441px, 1fr));
-  }
-} */
+
 @media only screen and (min-width: 1000px) {
   .productOne,
   .productTwo {
@@ -121,7 +117,7 @@ body {
   letter-spacing: 1.12px;
   line-height: 24px;
   justify-self: center;
-  align-self: start;
+  align-self: center;
   color: #6e4a9e;
 }
 
