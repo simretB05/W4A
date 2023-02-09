@@ -25,8 +25,6 @@ body {
   align-items: start;
   justify-items: center;
   margin: 16px auto;
-  /* background-color: #
-  6e4a9e; */
 }
 #meet-team,
 #our-products {
@@ -192,6 +190,6 @@ button,
 .pages-links a {
   font-size: 0.7em;
   text-decoration: none;
-  color: #6e4a9e;
+  color: #7e4fbd;
   padding: 16px;
 }
